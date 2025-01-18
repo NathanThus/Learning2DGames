@@ -30,6 +30,7 @@ namespace NathanThus.Learning2DGames.Characters.Player
         {
             _inputActions = new();
             _movement = _inputActions.PlayerActions.Movement;
+            _movement.Enable();
         }
 
         private void OnEnable()
@@ -56,10 +57,13 @@ namespace NathanThus.Learning2DGames.Characters.Player
         private void HandleMovement()
         {
             Vector2 movementDirection = _movement.ReadValue<Vector2>();
+
             if(movementDirection == Vector2.zero) return;
+            
+            if(_playerBody.velocity.sqrMagnitude >= _speed) return;
 
             movementDirection *= _speed;
-            _playerBody.AddForce(movementDirection);            
+            _playerBody.AddForce(movementDirection);
         }
 
         #endregion
