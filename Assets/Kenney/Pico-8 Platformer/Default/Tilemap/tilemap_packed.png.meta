@@ -3225,6 +3225,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3c79d4bef570b4b9c5ce4bcd37b7ca
+      internalID: -403028192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3237,6 +3258,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Pico8: -916796190
+      tilemap_packed_0: -403028192
       tilemap_packed_1: 1938576374
       tilemap_packed_10: 1583620666
       tilemap_packed_100: -263385174
